@@ -14,6 +14,12 @@ def index():
 
     return render_template("index.html")
 
+@app.route("/awareness")
+def awareness():
+
+    return render_template("awareness.html")
+
+
 # Set how & where to run the app
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
