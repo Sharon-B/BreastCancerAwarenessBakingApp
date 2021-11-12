@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, render_template
 if os.path.exists("env.py"):
     import env
 
@@ -10,8 +10,9 @@ app = Flask(__name__)
 
 # Test route and function view
 @app.route("/")
-def hello():
-    return "Hello World!"
+@app.route("/index")
+def index():
+    return render_template("index.html")
 
 
 # Set how & where to run the app
