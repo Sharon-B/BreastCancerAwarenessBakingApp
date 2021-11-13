@@ -26,6 +26,7 @@ def index():
     recipes = mongo.db.recipes.find()
     return render_template("index.html", recipes=recipes)
 
+
 @app.route("/awareness")
 def awareness():
 
@@ -37,4 +38,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
-
