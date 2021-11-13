@@ -1,12 +1,80 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Hello World</h1>
-<div class="hero-image">
-    <div class="hero-text">
-      <h1>I am John Doe</h1>
-      <p>And I'm a Photographer</p>
-      <button>Hire me</button>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 120%;
+    margin: 0;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="/static/images/5.jpg" alt="Chania" width="560" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/static/images/2.jpeg" alt="Chania" width="560" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="/static/images/3.jpeg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="/static/images/4.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
     </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="/static/images/4.jpg" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="/static/images/5.jpg" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div>
+  <h1>Intro stuff</h1>
 </div>
 
 
