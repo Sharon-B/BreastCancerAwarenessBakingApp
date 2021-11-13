@@ -1,6 +1,15 @@
 
 /*Navbar styling*/
 
-.navbar a {
-    list-style: none;
+.navbar-custom, footer {
+    background-color: #eef0fc;
+}
+
+.navbar-custom a {
+    text-decoration: none;
+    color: #402342;
+}
+
+.navbar-nav a {
+    color: #715072;
 }
