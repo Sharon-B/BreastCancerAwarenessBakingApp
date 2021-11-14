@@ -113,8 +113,10 @@ footer {
 
 .aware-img1 {
     margin-top: 1rem;
-    height: 1000px!;
-    width: 650px;
+    margin: 1px;
+    padding: 1px;
+    height: 800px!;
+    max-width: 550px;
 }
   
 /*Styling for Login and Register pages*/
