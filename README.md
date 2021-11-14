@@ -8,9 +8,13 @@ Link to live project here
 
 Stay A Breast is a website for breast cancer awareness aimed at bringing people together over breast cancer and baking. Stay A Breast will provide recipes for users to bake with others, hopefully while discussing breast cancer, and breast cancer prevention and detection. The site will also provide information on breast cancer, giving users something to talk to their fellow bakers about, including information on how to perform self checks, and where to go for further information.
 
+Users will be able to register for the website, login and share recipes for fellow bakers, supported by MongoDB.
+
 
 ## Wireframes
 
+Home page:
+![Home page wireframe](static/images/readme-images/home-wireframe.jpg)
 
 
 ## Features
@@ -56,7 +60,8 @@ Events page - events calendar and form for users to submit their own events
 
 ## Credits
 
-HTML for Bake Gallery from https://www.tutorialstonight.com/bootstrap-image-gallery.php
+HTML for Bake Gallery from Tutorials Tonight: https://www.tutorialstonight.com/bootstrap-image-gallery.php
+Code for sticky footer from CSS Tricks: https://css-tricks.com/couple-takes-sticky-footer/
 
 ### Content
 
