@@ -47,7 +47,6 @@ footer li {
 footer a {
     color: #715072;
     font-size: 1.25rem;
-
 }
 
 footer a:hover {
@@ -90,11 +89,4 @@ footer {
 
 .gallery-column img {
     margin: 10px;
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 100%;
-  margin: 0;
-  height: 68vh!important;
 }
