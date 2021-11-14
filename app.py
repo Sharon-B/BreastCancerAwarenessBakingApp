@@ -145,6 +145,33 @@ def recipe_detail(recipe_id):
     return render_template("recipe_detail.html", recipe=recipe, title="Recipe")
 
 
+# Add Recipe
+@app.route("/add_recipe", methods=["GET", "POST"])
+def add_recipe():
+    """
+    Allows a logged in user to add a recipe
+    """
+    if "user" not in session:
+        flash("Please Log In")
+        return redirect(url_for("login"))
+
+    if request.method == "POST":
+        recipe = {
+            "recipe_name": request.form.get("recipe_name"),
+            "recipe_description": request.form.get("recipe_description"),
+            "ingredients": request.form.getlist("ingredients"),
+            "method": request.form.getlist("method"),
+            "recipe_url": request.form.get("recipe_url"),
+            "added_by": session["user"]
+        }
+        mongo.db.recipes.insert_one(recipe)
+        flash("Recipe Successfully Added")
+        return redirect(url_for("profile", username=session["user"]))
+
+    return render_template(
+        "add_recipe.html", title="Add Recipe")
+
+
 # Set how & where to run the app
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
