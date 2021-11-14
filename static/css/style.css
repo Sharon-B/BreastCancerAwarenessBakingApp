@@ -5,6 +5,7 @@
 
 main {
     font-family: 'Barlow', sans-serif;
+    color: #402342;
 }
 
 /*Header styling*/
@@ -17,28 +18,83 @@ main {
     color: #402342;
 }
 
-.navbar-custom, footer {
-    background-color: #eef0fc;
-}
-
 .navbar-nav a {
     font-family: 'Barlow', sans-serif;
     text-decoration: none;
     color: #715072;  
 }
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 100%;
-  margin: 0;
-  height: 68vh!important;
+
+.navbar-brand a:hover {
+    color: #402342;
+    text-decoration: underline;
+}
+
+.navbar-nav a:hover {
+    color: #715072;
+    text-decoration: underline;
+}
+
+/*Footer styling*/
+
+footer li {
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+    padding: 15px;
+    text-decoration: none;
+}
+
+footer a {
+    color: #715072;
+    font-size: 1.25rem;
+
+}
+
+footer a:hover {
+    color: #715072;
+}
+
+/*Code for sticky footer from CSS Tricks: https://css-tricks.com/couple-takes-sticky-footer/ */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
 }
 
 /*Gallery styling*/
+
+.gallery-title {
+    padding-top: 10px;
+}
+
+.gallery-text {
+    font-family: 'Sacramento', cursive;
+}
 
 .gallery-column {
     max-width: 250px;
 }
 
 .gallery-column img {
-    margin: 6px;
+    margin: 10px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: 0;
+  height: 68vh!important;
 }
