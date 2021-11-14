@@ -28,6 +28,16 @@ main {
     color: #715072;  
 }
 
+.navbar-brand a:hover {
+    color: #402342;
+    text-decoration: underline;
+}
+
+.navbar-nav a:hover {
+    color: #715072;
+    text-decoration: underline;
+}
+
 /*Footer styling*/
 
 footer li {
@@ -43,10 +53,25 @@ footer a {
     font-size: 1.25rem;
 }
 
+footer a:hover {
+    color: #715072;
+}
+
+body {
+    margin-bottom: 60px;
+}
+.footer {
+    height: 60px;
+}
+
 /*Gallery styling*/
 
 .gallery-title {
     padding-top: 10px;
+}
+
+.gallery-text {
+    font-family: 'Sacramento', cursive;
 }
 
 .gallery-column {
