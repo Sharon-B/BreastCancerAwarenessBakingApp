@@ -1,14 +1,24 @@
 
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 100%;
-  margin: 0;
-}
+
 
 
 /*Navbar styling*/
 
 .navbar a {
     list-style: none;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: 0;
+  height: 65vh!important;
+}
+
+.aware-img1 {
+  max-height: 400px;
+  max-width: 400px;
+}
+body {
+  background: pink;
 }
