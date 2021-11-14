@@ -21,7 +21,7 @@
                         <img src="{{ recipe.recipe_url }}" class="card-img-top" alt="{{ recipe.recipe_name }}">
                         <div class="card-body"> 
                             <!-- Recipe Name -->                
-                            <h3><a class="heading recipe-title capitalize">{{ recipe.recipe_name }}</a></h3>
+                            <h3><a href="{{ url_for('recipe_detail', recipe_id=recipe._id) }}" class="heading recipe-title capitalize">{{ recipe.recipe_name }}</a></h3>
                             <!--Description -->
                             <p class="card-text">{{ recipe.recipe_description }}
                             </p>
