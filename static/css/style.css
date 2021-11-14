@@ -89,3 +89,18 @@ footer {
 .gallery-column img {
     margin: 10px;
 }
+
+/*Styling for Login and Register pages*/
+
+.register-heading, .login-heading {
+    margin-left: 50px;
+}
+
+.register-link, .login-link {
+    color: #00525d;
+    text-decoration: underline;
+}
+
+.register-link:hover, .login-link:hover {
+    color: #00525d;
+}

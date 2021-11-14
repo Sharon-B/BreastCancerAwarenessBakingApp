@@ -16,23 +16,49 @@ Users will be able to register for the website, login and share recipes for fell
 Home page:
 ![Home page wireframe](static/images/readme-images/home-wireframe.jpg)
 
+Recipes main page page wireframe
+![Recipes main page wireframe](static/images/readme-images/recipes-wireframe.jpg)
+
+Recipes individual page wireframe
+![Recipes individual page wireframe](static/images/readme-images/recipe-2.jpg)
+
+Login and Register page wireframe
+![Login page wireframe](static/images/readme-images/login-wireframe.jpg)
+
+Events wireframe (future implementation)
+![Events page wireframe](static/images/readme-images/events-wireframe.jpg)
+
+
 
 ## Features
 
-All pages
+### All pages
+
 Responsive navigation bar for ease of use on an viewports
+
 Links are underlined when hovered over to indicate that they are clickable, and Logo redirects to Home page
+
 Footer with links to socials
 
-Home page
+### Home page
 
-Recipe page
+Eyecatching carousel
 
-Awareness page
+### Recipe page
 
-Bake Gallery page
+Bootstrap cards
 
-Login/Register page
+### Awareness page
+
+Clearly and concisely presented information, from official sources.
+
+### Bake Gallery page
+
+Imagers from user's own baking projects.
+
+### Login/Register pages
+
+Form for registering and a form for logging in.
 
 
 ### Future features
