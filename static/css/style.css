@@ -127,3 +127,33 @@ footer {
 .register-link:hover, .login-link:hover {
     color: #00525d;
 }
+
+.awareness-content {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #eef0fa;
+    margin: 30px;
+    padding: 20px;
+}
+.awareness-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.awareness-content a {
+    color:#402342;
+}
+.awareness-content a:hover {
+    color:#866c88;
+}
+.awareness-content h3 {
+    background-color: #eef0fa;
+}
+.awareness-title {
+    font-size: 2.5rem;
+    text-align: center!important;
+    margin-top: 10px;
+}
+.awareness-heading {
+    font-family: 'Sacramento', sans-serif;
+    text-align: center!important;
+}
