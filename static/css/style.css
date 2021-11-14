@@ -1,24 +1,53 @@
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Sacramento&display=swap');
 
 /*Navbar styling*/
 
-.navbar a {
-    list-style: none;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 100%;
-  margin: 0;
-  height: 65vh!important;
+
+main {
+    font-family: 'Barlow', sans-serif;
 }
 
-.aware-img1 {
-  max-height: 400px;
-  max-width: 400px;
+/*Header styling*/
+
+.navbar-brand a {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.25rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #402342;
 }
-body {
-  background: pink;
+
+.navbar-custom, footer {
+    background-color: #eef0fc;
+}
+
+.navbar-nav a {
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color: #715072;  
+}
+
+/*Footer styling*/
+
+footer li {
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+    padding: 15px;
+    text-decoration: none;
+}
+
+footer a {
+    color: #715072;
+    font-size: 1.25rem;
+}
+
+/*Gallery styling*/
+
+.gallery-column {
+    max-width: 250px;
+}
+
+.gallery-column img {
+    margin: 6px;
 }
