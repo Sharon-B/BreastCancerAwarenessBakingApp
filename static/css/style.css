@@ -92,14 +92,23 @@ footer {
     margin: 10px;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousel-item > img {
   width: 100%;
   margin: 0;
-  height: 68vh!important;
+  height: 70vh!important;
+}
+.carousel-item {
+    height: 70vh;
+    width: 100%;
+    margin: 0;
+}
+
+.carousel-caption {
+    position: absolute;
 }
 
 .aware-img1 {
-    height: 100px!important;
-    width: 100px;
+    margin-top: 1rem;
+    height: 1000px!;
+    width: 650px;
 }
