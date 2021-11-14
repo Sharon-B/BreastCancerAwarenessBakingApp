@@ -74,8 +74,8 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-        return redirect(url_for(
-            "profile", username=session["user"]))
+        return redirect(url_for("index"))
+
     return render_template("register.html", title="Register")
 
 
@@ -97,8 +97,7 @@ def login():
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                     request.form.get("username")))
-                return redirect(url_for(
-                    "profile", username=session["user"]))
+                return redirect(url_for("index"))
 
             else:
                 # If invalid password match
@@ -111,6 +110,16 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("login.html", title="Log In")
+
+# Recipes
+@app.route("/recipes")
+def recipes():
+    """
+    Displays all recipes, paginated to 9 per page
+    """
+    recipes = mongo.db.recipes.find()
+    return render_template(
+        "recipes.html", recipes=recipes, title="All Recipes")
 
 
 # Set how & where to run the app
