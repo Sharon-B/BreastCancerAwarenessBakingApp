@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Code for gallery from https://www.tutorialstonight.com/bootstrap-image-gallery.php -->
+
+<div class="container-fluid">
+    <h1 class="text-center">Bake Gallery</h1>
+    <div class="d-flex flex-wrap justify-content-center">
+        <div class="d-flex flex-column gallery-column">
+            <img class="img-fluid rounded" src="{{ url_for('static', filename='images/happiness-cake.jpg') }}" alt="A cake fork with the text 'Happiness is a piece of cake' written on it, slicing into a berry cake.">
+            <img class="img-fluid rounded" src="{{ url_for('static', filename='images/choc-cake.jpg') }}" alt="A piece of chocolate cake.">
+        </div>
+
+        <div class="d-flex flex-column gallery-column">
+            <img class="img-fluid" src="{{ url_for('static', filename='images/pink-white-cake.jpg') }}" alt="A piece of pink and white cake">
+            <img class="img-fluid" src="{{ url_for('static', filename='images/strawb-cake.jpg') }}" alt="A pink layer cake with berries and chocolate on top, sitting on a window sill.">
+        </div>
+
+        <div class="d-flex flex-column gallery-column">
+            <img class="img-fluid" src="{{ url_for('static', filename='images/ingredients.jpg') }}" alt="Assorted baking ingredients laid out on a table.">
+            <img class="img-fluid" src="{{ url_for('static', filename='images/red-velvet-cupcake.jpg') }}" alt="A red velvet cupcake with cream cheese frosting.">
+        </div>
+
+        <div class="d-flex flex-column gallery-column">
+            <img class="img-fluid" src="{{ url_for('static', filename='images/sprinkles.jpg') }}" alt="Rainbow sprinkles in a small ramekin.">
+            <img class="img-fluid" src="{{ url_for('static', filename='images/rainbow-buttercream.jpg') }}" alt="Multicoloured buttercream icing swirls.">
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}
