@@ -3,6 +3,7 @@ from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -132,6 +133,16 @@ def recipes():
     recipes = mongo.db.recipes.find()
     return render_template(
         "recipes.html", recipes=recipes, title="All Recipes")
+
+
+# One recipe
+@app.route("/recipe_detail/<recipe_id>")
+def recipe_detail(recipe_id):
+    """
+    Displays the full recipe
+    """
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("recipe_detail.html", recipe=recipe, title="Recipe")
 
 
 # Set how & where to run the app
