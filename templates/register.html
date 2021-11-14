@@ -4,8 +4,8 @@
 
 {% block content %}
     <!-- Page Heading -->
-    <h2 class="page-heading heading">Register</h2>
-    <div id="form-wrapper" class="container">
+    <h2 class="page-heading heading register-heading">Register</h2>
+    <div id="form-wrapper register-form" class="container">
         <div class="row">
             <div class="col">
                 <!-- Bootstrap Card with modifications -->
@@ -42,9 +42,18 @@
                                 <div id="password-help" class="form-text help-text">Must be 5-15 charcters, letters or numbers only
                                 </div>
                             </div>
+
                             <div class="col form-password form-input">
                                 <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
                                     class="input-field validate" autocomplete="new-password" placeholder="Enter password" required>
+
+                            <!-- Register Button -->
+                            <div class="sub">
+                                <input class="submit-button button" type="submit" value="Register">
+                                <!-- Redirect to Login Page -->
+                                <p>Already Registered? <a href="{{ url_for('login') }}" class="login-link">Log In</a>
+                                </p>
+
                             </div>
                         </div>
                         <!-- Register Button -->

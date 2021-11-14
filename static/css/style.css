@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Sacramento&display=swap');
 
-/*Navbar styling*/
-
+/*Global font styling (open to change!)*/
 
 main {
     font-family: 'Barlow', sans-serif;
@@ -11,8 +10,8 @@ main {
 /*Header styling*/
 
 .navbar-brand a {
-    font-family: 'Sacramento', cursive;
-    font-size: 2.25rem;
+    font-family: 'Sacramento', sans-serif;
+    font-size: 2.5rem;
     font-weight: 800;
     text-decoration: none;
     color: #402342;
@@ -47,7 +46,6 @@ footer li {
 footer a {
     color: #715072;
     font-size: 1.25rem;
-
 }
 
 footer a:hover {
@@ -81,7 +79,7 @@ footer {
 }
 
 .gallery-text {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Sacramento', sans-serif;
 }
 
 .gallery-column {
@@ -92,10 +90,12 @@ footer {
     margin: 10px;
 }
 
+
 .carousel-item > img {
   width: 100%;
   margin: 0;
   height: 70vh!important;
+
 }
 .carousel-item {
     height: 70vh;
@@ -111,4 +111,19 @@ footer {
     margin-top: 1rem;
     height: 1000px!;
     width: 650px;
+}
+  
+/*Styling for Login and Register pages*/
+
+.register-heading, .login-heading {
+    margin-left: 50px;
+}
+
+.register-link, .login-link {
+    color: #00525d;
+    text-decoration: underline;
+}
+
+.register-link:hover, .login-link:hover {
+    color: #00525d;
 }

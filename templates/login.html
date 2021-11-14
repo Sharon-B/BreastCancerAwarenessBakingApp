@@ -4,8 +4,8 @@
 
 {% block content %}
     <!-- Page Heading -->
-    <h2 class="page-heading heading">Login</h2>
-    <div id="form-wrapper" class="container">
+    <h2 class="page-heading heading login-heading">Login</h2>
+    <div id="form-wrapper login-form" class="container">
         <div class="row">
             <div class="col">
                 <!-- Bootstrap Card with modifications -->
@@ -25,6 +25,12 @@
                         <div class="row form-section">
                             <div class="col-12">
                                 <label for="username" class="form-label">Password:</label>
+                            <!-- Submit Button -->
+                            <div class="sub">
+                                <input class="submit-button button" type="submit" value="Log In">
+                                <!-- Redirect to Register Page -->
+                                <p>Not Registered Yet? <a href="{{ url_for('register') }}" class="register-link">Register</a>
+                                </p>
                             </div>
                             <div class="col-12 form-password form-input">
                                 <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="input-field validate" autocomplete="current-password" placeholder="Enter password" required>
