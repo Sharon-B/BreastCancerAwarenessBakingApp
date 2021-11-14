@@ -33,6 +33,12 @@ def awareness():
     return render_template("awareness.html")
 
 
+@app.route("/gallery")
+def gallery():
+
+    return render_template("gallery.html")
+
+
 # Set how & where to run the app
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Sacramento&display=swap');
 
+main {
+    font-family: 'Barlow', sans-serif;
+}
+
 /*Header styling*/
 
 .navbar-brand a {
