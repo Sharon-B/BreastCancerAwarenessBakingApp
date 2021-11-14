@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2 class="gallery-text" id="awareness-header">Awareness</h2>
-
-<ul>
+<h2 class="awareness-title" id="awareness-header">Awareness</h2>
+<h2 class="awareness-heading">About Breast Cancer</h2>
+<div class="awareness-content">
+<ul class="awareness-header-list">
     <li>
         <a href="#what-is-breast-cancer">What is Breast Cancer?</a>
     </li>
@@ -20,8 +21,9 @@
         <a href="#breastexam">How to Perform a Breast Self-Exam</a>
     </li>
 </ul>
+
 <!-- source: https://www.nationalbreastcancer.org/about-breast-cancer/ -->
-<h3 id="what-is-breast-cancer">What is Breast Cancer?</h3>
+<h3 id="what-is-breast-cancer" class="awareness-bg">What is Breast Cancer?</h3>
 
 <h4>What is Cancer?</h4>
 <p>
@@ -45,7 +47,7 @@
     <a href="#awareness-header">Back to top</a>
 </p>
 
-<h3 id="signs-and-symptoms">Signs and Symptoms</h3>
+<h3 id="signs-and-symptoms" class="awareness-bg">Signs and Symptoms</h3>
 
 <h4>What Are the Symptoms and Signs of Breast Cancer?</h4>
 <p>
@@ -77,7 +79,7 @@
     <a href="#awareness-header">Back to top</a>
 </p>
 
-<h3 id="diagnosis">Diagnosis</h3>
+<h3 id="diagnosis" class="awareness-bg">Diagnosis</h3>
 <p>
     Breast cancer can be diagnosed through multiple tests, including a mammogram, ultrasound, MRI and biopsy.
 </p>
@@ -106,7 +108,7 @@
     <a href="#awareness-header">Back to top</a>
 </p>
 
-<h3 id="treatment">Treatment</h3>
+<h3 id="treatment" class="awareness-bg">Treatment</h3>
 <p>
     In general, there are five treatment options, and most treatment plans include a combination of the following: surgery, radiation, hormone therapy, chemotherapy, and targeted therapies. Some are local, targeting just the area around the tumor. Others are systemic, targeting your whole body with cancer fighting agents.
 </p>
@@ -117,7 +119,7 @@
 <p>
     <a href="#awareness-header">Back to top</a>
 </p>
-<h3 id="breastexam">How to Perform a Breast Self-Exam</h3>
+<h3 id="breastexam" class="awareness-bg">How to Perform a Breast Self-Exam</h3>
 <p>
     Adult women of all ages are encouraged to perform breast self-exams at least once a month.
 </p>
@@ -141,8 +143,10 @@
 <p>
     <a href="#awareness-header">Back to top</a>
 </p>
+</div>
 
-
-
+<p class="awareness-disclaimer">
+    All information above was sourced from materials created and collated by the <a href="https://www.nationalbreastcancer.org/">National Breast Cancer Foundation</a>.
+</p>
 
 {% endblock %}
