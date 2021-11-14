@@ -105,6 +105,10 @@ footer {
 
 .carousel-caption {
     position: absolute;
+    right: auto!important;
+    left: auto!important;
+    bottom: -1.75rem!important;
+    text-align: left!important;
 }
 
 .aware-img1 {
