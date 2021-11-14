@@ -111,11 +111,23 @@ def login():
 
     return render_template("login.html", title="Log In")
 
+
+# Log Out
+@app.route("/logout")
+def logout():
+    """
+    Clears the session & redirects to login page
+    """
+    session.pop("user")
+    flash("You are now logged out")
+    return redirect(url_for("login"))
+
+
 # Recipes
 @app.route("/recipes")
 def recipes():
     """
-    Displays all recipes, paginated to 9 per page
+    Displays all recipes
     """
     recipes = mongo.db.recipes.find()
     return render_template(
