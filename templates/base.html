@@ -26,11 +26,11 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: #eef0fc">
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: #eef0fa;">
             <div class="container-fluid">
-                <!-- <div class="navbar-brand"> -->
+                <div class="navbar-brand">
                     <a class="navbar-brand" href="{{ url_for('index') }}">Stay A Breast</a>
-                <!-- </div> -->
+                </div>
                 <div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,6 +80,23 @@
         {% block content %}
         {% endblock %}
     </main>
+
+    <footer class="footer mt-auto py-3" style="background-color: #eef0fa" role="content-info">
+        <ul>
+            <li>
+                <a href="#" target="_blank" rel="noopener" aria-label="Visit our Instagram page; opens in a new tab"><i
+                        class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener" aria-label="Visit our Facebook page; opens in a new tab"><i
+                        class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="#" target="_blank" rel="noopener" aria-label="Visit our Twitter page; opens in a new tab"><i
+                        class="fab fa-twitter-square"></i></a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 

@@ -4,8 +4,8 @@
 
 {% block content %}
     <!-- Page Heading -->
-    <h2 class="page-heading heading">Login</h2>
-    <div id="form-wrapper" class="container">
+    <h2 class="page-heading heading login-heading">Login</h2>
+    <div id="form-wrapper login-form" class="container">
         <div class="row">
             <div class="col">
                 <!-- Bootstrap Card with modifications -->
@@ -38,7 +38,7 @@
                             <div class="sub">
                                 <input class="submit-button button" type="submit" value="Log In">
                                 <!-- Redirect to Register Page -->
-                                <p>Not Registered Yet? <a href="{{ url_for('register') }}">Register</a>
+                                <p>Not Registered Yet? <a href="{{ url_for('register') }}" class="register-link">Register</a>
                                 </p>
                             </div>
                         </form>
