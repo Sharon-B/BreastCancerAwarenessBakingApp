@@ -5,6 +5,7 @@
 
 main {
     font-family: 'Barlow', sans-serif;
+    color: #402342;
 }
 
 /*Header styling*/
@@ -44,10 +45,14 @@ footer a {
 
 /*Gallery styling*/
 
+.gallery-title {
+    padding-top: 10px;
+}
+
 .gallery-column {
     max-width: 250px;
 }
 
 .gallery-column img {
-    margin: 6px;
+    margin: 10px;
 }
