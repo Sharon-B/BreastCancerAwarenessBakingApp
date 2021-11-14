@@ -29,13 +29,11 @@ def index():
 
 @app.route("/awareness")
 def awareness():
-
     return render_template("awareness.html")
 
 
 @app.route("/gallery")
 def gallery():
-
     return render_template("gallery.html")
 
 
