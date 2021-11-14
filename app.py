@@ -3,6 +3,7 @@ from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
@@ -74,8 +75,8 @@ def register():
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
-        return redirect(url_for(
-            "profile", username=session["user"]))
+        return redirect(url_for("index"))
+
     return render_template("register.html", title="Register")
 
 
@@ -97,8 +98,7 @@ def login():
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                     request.form.get("username")))
-                return redirect(url_for(
-                    "profile", username=session["user"]))
+                return redirect(url_for("index"))
 
             else:
                 # If invalid password match
@@ -111,6 +111,38 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("login.html", title="Log In")
+
+
+# Log Out
+@app.route("/logout")
+def logout():
+    """
+    Clears the session & redirects to login page
+    """
+    session.pop("user")
+    flash("You are now logged out")
+    return redirect(url_for("login"))
+
+
+# Recipes
+@app.route("/recipes")
+def recipes():
+    """
+    Displays all recipes
+    """
+    recipes = mongo.db.recipes.find()
+    return render_template(
+        "recipes.html", recipes=recipes, title="All Recipes")
+
+
+# One recipe
+@app.route("/recipe_detail/<recipe_id>")
+def recipe_detail(recipe_id):
+    """
+    Displays the full recipe
+    """
+    recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("recipe_detail.html", recipe=recipe, title="Recipe")
 
 
 # Set how & where to run the app
