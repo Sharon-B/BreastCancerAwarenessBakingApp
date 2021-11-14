@@ -62,6 +62,21 @@
         </nav>
     </header>
 
+    <div id="flash-message">
+        <!-- Flash messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="container">
+                        <div class="row flash">
+                            <h4 class="flash-msg capitalize">{{ message }}</h4>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+
     <main>
         {% block content %}
         {% endblock %}
