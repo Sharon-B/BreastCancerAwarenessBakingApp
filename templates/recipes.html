@@ -12,27 +12,30 @@
                     <h2 class="awareness-heading">Bake For Breast Cancer</h2>
                 </div>
             </div>
-            
-            <div class="row row-cols-1 row-cols-md-3">
+            <div class="recipes-content row row-cols-1 row-cols-md-3">
                 {% for recipe in recipes %}
                 <div class="col-12 col-md-4 recipes">
                     <!-- Bootstrap Card with modifications - Recipe Card -->
-                    <div class="card  recipe-card h-100"> 
+                    <div class="card recipe-card h-100"> 
+                        
                         <!-- Recipe Image--> 
-                        <img src="{{ recipe.recipe_url }}" class="card-img-top" alt="{{ recipe.recipe_name }}">
+                        <img src="{{ recipe.recipe_url }}" class="recipe-image card-img-top" alt="{{ recipe.recipe_name }}">
+
                         <div class="card-body"> 
                             <!-- Recipe Name -->                
-                            <h3><a href="{{ url_for('recipe_detail', recipe_id=recipe._id) }}" class="heading recipe-title capitalize">{{ recipe.recipe_name }}</a></h3>
+                            <h4 class="recipe-heading">
+                                <a href="{{ url_for('recipe_detail', recipe_id=recipe._id) }}" class="capitalize">{{ recipe.recipe_name }}</a>
+                            </h4>
                             <!--Description -->
-                            <p class="card-text">{{ recipe.recipe_description }}
+                            <p class="card-text">
+                                {{ recipe.recipe_description }}
                             </p>
                             <!-- Added By -->
-                            <p class="recipe-added-by">Added by: {{ recipe.added_by }}
+                            <p class="recipe-added-by">
+                                Added by: {{ recipe.added_by }}
                             </p> 
-                            
                         </div> 
                     </div>
-                    
                 </div> 
                 {% endfor %}
             </div>
