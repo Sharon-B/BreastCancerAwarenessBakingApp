@@ -347,14 +347,15 @@ form p {
 }
 
 .link {
-    color: #305D64;
-    font-weight: bold;
+    color: #00525d;
+    font-weight: 800;
     text-decoration: none;
 }
 
 .link:hover {
-    color: #305D64;
+    color: #00525d;
     text-decoration: underline;
+}
 
 .recipes-content .recipes .recipe-detail-image {
     width: 400px;
