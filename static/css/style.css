@@ -283,3 +283,9 @@ form p {
     font-style: italic;
     color: grey;
 }
+
+.recipe-list-item {
+    font-size: 1.6rem;
+    white-space: pre-wrap;
+    list-style: none;
+}
