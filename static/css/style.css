@@ -130,12 +130,14 @@ footer {
 /* Styling for introduction paragraph on home page */
 .intro {
     text-align: center;
+    
 }
 
 /* Styling for paragraphs on home page */
 .p-index {
     margin: 0%;
     background-color: #eef0fa!important;
+    font-size: x-large!important;
 }
   
 /*Styling for Login and Register pages*/
