@@ -117,30 +117,24 @@ footer {
 }
 /* Styling for desciptive image on home page */
 .aware-img1 {
-    /* margin-top: 1rem; */
     margin-top: 10px;
     padding: 0px;
-    height: fit-content;
+    /* height: fit-content; */
     max-width: 100%;
+    padding: 0!important;
 }
 .aware-img1-space {
-    /* margin-top: 1rem; */
+    /* padding: 0!important; */
     margin: 0px;
     padding: 0px;
-    height: fit-content;
+    /* height: fit-content; */
     max-width: 100%;
 }
 
-.row>* {
-    padding: 0!important;
-}
 /* Styling for paragraphs on home page */
 .p-index {
-    margin-top: 10px;
-    marging: 5px;
-    background-color: #eef0fa!important;
     margin: 0%;
-    padding: 0%;
+    background-color: #eef0fa!important;
 }
   
 /*Styling for Login and Register pages*/
