@@ -23,10 +23,10 @@ main {
     color: #715072;  
 }
 
-.navbar-brand a:hover {
+/* .navbar-brand a:hover {
     color: #402342;
     text-decoration: underline;
-}
+} */
 
 .navbar-nav a:hover {
     color: #715072;
@@ -121,8 +121,14 @@ footer {
   
 /*Styling for Login and Register pages*/
 
-.register-heading, .login-heading {
-    margin-left: 50px;
+#register {
+    display: flex;
+}
+
+.register-heading, .login-heading, .heading {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2.5rem;
 }
 
 .register-link, .login-link {
@@ -134,7 +140,8 @@ footer {
     color: #00525d;
 }
 
-.awareness-content {
+.awareness-content,
+.content-border {
     border-width: 2px;
     border-style: solid;
     border-color: #eef0fa;
