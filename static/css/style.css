@@ -319,7 +319,7 @@ form p {
     font-size: 1.5rem;
 }
 .recipes-content .recipes .recipe-image {
-    width: 400px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
 }
@@ -340,4 +340,10 @@ form p {
 }
 .recipe-image-wrapper {
     text-align: center
+}
+
+.recipes-content .recipes .recipe-detail-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }
