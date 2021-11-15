@@ -56,7 +56,7 @@
         At Stay A Breast we aim to promote awareness and understanding of breast cancer. Our latest awareness campaign Bake For Breast Cancer encourages everyone to gather some friends or family to make your favourite baked goodies and also use this time to share your experiences of breast cancer and as a gentle reminder to check yourself. Also don’t forget to share your treats on social media #StayABreast #BakeForBreastCancer.
       </p>
       <p class="p-index-1">
-        Check out our recipes page where you’ll find some great recipes to get you started. Also feel free to register and log in to our site so you can upload your own recipes to share with everyone too!
+        Check out our <a class="link" href="{{ url_for('recipes') }}">recipes page</a> where you’ll find some great recipes to get you started. Also feel free to <a class="link" href="{{ url_for('register') }}">register</a> and <a class="link" href="{ url_for('login') }}">log in</a> to our site so you can upload your own recipes to share with everyone too!
       </p>
   </div>
 <div class="container index-contain">
@@ -68,7 +68,9 @@
       <div class="row">
         <div class="col col-md-push-6"><h1>What is Breast Cancer?</h1>
           <p class="p-index">Breast cancer is when cells in your breast change and grow in an abnormal way. A group of these cancer cells can form a tumour.
-            Breast cancer is a common cancer in Ireland. More than 3,600 women and around 37 men are diagnosed with it each year.</p><br><br>
+            Breast cancer is a common cancer in Ireland. More than 3,600 women and around 37 men are diagnosed with it each year.</p><br>
+            <a class="link" href="{{ url_for('awareness') }}">Read More..</a>
+            <br>
         </div>
       </div>
       <div class="row">
@@ -76,7 +78,9 @@
           <h1>Early Detection is Key</h1>
           <p class="p-index">The most important screening test for breast cancer is the mammogram. A mammogram is like an X-ray of the breast. 
                 It can detect breast cancer up to two years before the tumor can be felt by you or your doctor. Informed decision making 
-                starting at age 40.</p><br><br>
+                starting at age 40.</p><br>
+                <a class="link" href="{{ url_for('awareness') }}">Read More..</a>
+                <br>
         </div>
       </div>
       <div class="row">
