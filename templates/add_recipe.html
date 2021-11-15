@@ -11,7 +11,7 @@
             </div>
         </div>
    
-        <form id="add-recipe-form" method="POST" action="{{ url_for('add_recipe')}}">
+        <form id="add-recipe-form" class="content-border" method="POST" action="{{ url_for('add_recipe')}}">
             <!-- Recipe Name -->
             <div class="row form-section">
                 <div class="col-12">
@@ -72,7 +72,7 @@
             <!-- Submit Button -->
             <div class="row">
                 <div class="col sub">
-                    <a href="{{ url_for('index') }}" class="btn cancel-button button">Cancel</a>
+                    <a href="{{ url_for('index') }}" class="cancel-button button">Cancel</a>
                     <input class="submit-button button" type="submit" value="Add Recipe">
                 </div>
             </div>
