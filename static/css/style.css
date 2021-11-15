@@ -117,15 +117,30 @@ footer {
 }
 /* Styling for desciptive image on home page */
 .aware-img1 {
-    margin-top: 1rem;
-    margin: 1px;
-    padding: 1px;
-    height: 800px!;
-    max-width: 550px;
+    /* margin-top: 1rem; */
+    margin-top: 10px;
+    padding: 0px;
+    height: fit-content;
+    max-width: 100%;
+}
+.aware-img1-space {
+    /* margin-top: 1rem; */
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+    max-width: 100%;
+}
+
+.row>* {
+    padding: 0!important;
 }
 /* Styling for paragraphs on home page */
-.p.index {
-    background-color: pink!important;
+.p-index {
+    margin-top: 10px;
+    marging: 5px;
+    background-color: #eef0fa!important;
+    margin: 0%;
+    padding: 0%;
 }
   
 /*Styling for Login and Register pages*/
