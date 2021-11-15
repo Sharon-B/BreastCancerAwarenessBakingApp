@@ -41,20 +41,24 @@ main {
 
 /*Footer styling*/
 
+footer ul {
+    text-align:center;
+}
+
 footer li {
     list-style-type: none;
     text-decoration: none;
-    float: right;
     padding: 15px;
-    text-decoration: none;
+    display: inline;
+    
 }
 
-footer a {
+footer i {
     color: #715072;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
 }
 
-footer a:hover {
+footer i:hover {
     color: #715072;
 }
 
@@ -319,7 +323,7 @@ form p {
     font-size: 1.5rem;
 }
 .recipes-content .recipes .recipe-image {
-    width: 400px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
 }
@@ -342,6 +346,7 @@ form p {
     text-align: center
 }
 
+<<<<<<< HEAD
 /* MEDIA QUERIES */
 
 
@@ -397,3 +402,21 @@ form p {
 
 
 
+=======
+.link {
+    color: #00525d;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #00525d;
+    text-decoration: underline;
+}
+
+.recipes-content .recipes .recipe-detail-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+>>>>>>> 65113621d8d332461a1615d899b8e250d171f6e9
