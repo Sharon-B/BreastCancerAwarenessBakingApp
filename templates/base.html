@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
+    <meta name="Description" content="Stay A Breast is a site aimed at promoting awareness around breast cancer" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/6ce9d8c658.js" crossorigin="anonymous"></script>
     <!-- Bootstrap Bundle with Popper -->
@@ -46,18 +46,29 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('recipes') }}">Recipes</a>
                         </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('awareness') }}">Awareness</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('gallery') }}">Bake Gallery</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('register') }}">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
-                        </li>
+                        
+                        {% if session.user %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('add_recipe') }}">Add Recipe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                            </li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>

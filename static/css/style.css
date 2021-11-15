@@ -115,6 +115,15 @@ footer {
     bottom: -1.75rem!important;
     text-align: left!important;
 }
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
 /* Styling for desciptive image on home page */
 .aware-img1 {
     margin-top: 10px;
@@ -129,6 +138,10 @@ footer {
     padding: 0px;
     /* height: fit-content; */
     max-width: 100%;
+}
+/* Styling for introduction paragraph on home page */
+.intro {
+    text-align: center;
 }
 
 /* Styling for paragraphs on home page */
@@ -298,4 +311,9 @@ form p {
     padding: 10px;
     margin: 20px 0;
     background-color: #eef0fa;
+}
+.recipe-list-item {
+    font-size: 1.6rem;
+    white-space: pre-wrap;
+    list-style: none;
 }
