@@ -116,14 +116,6 @@ footer {
     text-align: left!important;
 }
 
-#welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 2rem;
-}
 /* Styling for desciptive image on home page */
 .aware-img1 {
     margin-top: 10px;
@@ -142,6 +134,8 @@ footer {
 }
 #welcome {
     display: flex;
+    font-size: xx-large!important;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -152,6 +146,14 @@ footer {
 .p-index {
     margin: 0%;
     background-color: #eef0fa!important;
+    font-size: large!important;
+}
+.index-contain {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.p-index-1 {
+    margin: 0%;
     font-size: large!important;
 }
   
