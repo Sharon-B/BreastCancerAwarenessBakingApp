@@ -130,6 +130,10 @@ footer {
     /* height: fit-content; */
     max-width: 100%;
 }
+/* Styling for introduction paragraph on home page */
+.intro {
+    text-align: center;
+}
 
 /* Styling for paragraphs on home page */
 .p-index {
