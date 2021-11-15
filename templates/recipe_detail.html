@@ -8,55 +8,58 @@
             </div>
         </div>
         <!-- Recipe image -->
-        <div class="recipes-content" class="row center-it">
-            <div class="col-10 col-md-6">
-                <img src="{{ recipe.recipe_url }}" class="recipe-image" alt="{{ recipe.recipe_name }}">
+        <div class="recipes-content">
+            <div class="recipes">
+                <div class="recipe-image-wrapper">
+                    <img src="{{ recipe.recipe_url }}" class="recipe-image" alt="{{ recipe.recipe_name }}">
+                </div>
+            
+            <!-- Recipe description -->
+            <div class="row">
+                <div class="col">
+                    <p class="description">{{ recipe.recipe_description }}
+                    </p>
+                </div>
             </div>
-        </div>
-        <!-- Recipe description -->
-        <div class="row">
-            <div class="col">
-                <p class="description">{{ recipe.recipe_description }}
-                </p>
+            <!-- Recipe ingredients -->
+            <div class="row">
+                <div class="col">
+                    <h3 class="recipe-sub-heading heading">Ingredients</h3>
+                </div>
             </div>
-        </div>
-        <!-- Recipe ingredients -->
-        <div class="row">
-            <div class="col">
-                <h3 class="recipe-sub-heading heading">Ingredients</h3>
+            <div class="row">
+                <div class="col recipe-list">
+                    <ul>
+                        {% for ingredient in recipe.ingredients %}
+                            <li class="recipe-list-item">{{ ingredient }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col recipe-list">
-                <ul>
-                    {% for ingredient in recipe.ingredients %}
-                        <li class="recipe-list-item">{{ ingredient }}</li>
+            <!-- Recipe method -->
+            <div class="row">
+                <div class="col">
+                    <h3 class="recipe-sub-heading heading">Method</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                    {% for meth in recipe.method %}
+                        <li class="recipe-list-item">{{ meth }}</li>
                     {% endfor %}
-                </ul>
+                    </ul>  
+                </div>
             </div>
-        </div>
-        <!-- Recipe method -->
-        <div class="row">
-            <div class="col">
-                <h3 class="recipe-sub-heading heading">Method</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <ul>
-                {% for meth in recipe.method %}
-                    <li class="recipe-list-item">{{ meth }}</li>
-                {% endfor %}
-                </ul>  
-            </div>
-        </div>
-        <!-- Recipe added by -->
-        <div class="row">
-            <div class="col">
-                <div class="recipe-added-by">Added by: {{ recipe.added_by }}</div>
+            <!-- Recipe added by -->
+            <div class="row">
+                <div class="col">
+                    <div class="recipe-added-by">Added by: {{ recipe.added_by }}</div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
         
 
 {% endblock %}
