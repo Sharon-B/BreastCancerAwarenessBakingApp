@@ -115,6 +115,15 @@ footer {
     bottom: -1.75rem!important;
     text-align: left!important;
 }
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
 /* Styling for desciptive image on home page */
 .aware-img1 {
     margin-top: 10px;
@@ -132,12 +141,11 @@ footer {
     text-align: center;
     
 }
-
 /* Styling for paragraphs on home page */
 .p-index {
     margin: 0%;
     background-color: #eef0fa!important;
-    font-size: x-large!important;
+    font-size: large!important;
 }
   
 /*Styling for Login and Register pages*/
@@ -272,4 +280,38 @@ form p {
     font-size: 0.9rem;
     font-style: italic;
     color: grey;
+}
+.recipes-content {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #eef0fa;
+    margin: 30px;
+    padding: 20px;
+}
+.recipes-content .recipes {
+    margin-bottom: 30px;
+}
+.recipes-content .recipes h4.recipe-heading a {
+    font-size: 1.5rem;
+}
+.recipes-content .recipes .recipe-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.recipes-content a {
+    color:#402342;
+}
+.recipes-content a:hover {
+    color:#866c88;
+}
+.recipes-content h3 {
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #eef0fa;
+}
+.recipe-list-item {
+    font-size: 1.6rem;
+    white-space: pre-wrap;
+    list-style: none;
 }
