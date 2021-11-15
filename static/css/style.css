@@ -327,3 +327,14 @@ form p {
 .recipe-image-wrapper {
     text-align: center
 }
+
+.link {
+    color: #305D64;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #305D64;
+    text-decoration: underline;
+}
