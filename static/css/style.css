@@ -41,20 +41,24 @@ main {
 
 /*Footer styling*/
 
+footer ul {
+    text-align:center;
+}
+
 footer li {
     list-style-type: none;
     text-decoration: none;
-    float: right;
     padding: 15px;
-    text-decoration: none;
+    display: inline;
+    
 }
 
-footer a {
+footer i {
     color: #715072;
-    font-size: 1.25rem;
+    font-size: 3rem;
 }
 
-footer a:hover {
+footer i:hover {
     color: #715072;
 }
 
