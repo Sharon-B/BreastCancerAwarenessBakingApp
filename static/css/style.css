@@ -96,12 +96,11 @@ footer {
     margin: 10px;
 }
 
-
+/* Styling for Carousel on index page */
 .carousel-item > img {
   width: 100%;
   margin: 0;
   height: 70vh!important;
-
 }
 .carousel-item {
     height: 70vh;
@@ -116,13 +115,17 @@ footer {
     bottom: -1.75rem!important;
     text-align: left!important;
 }
-
+/* Styling for desciptive image on home page */
 .aware-img1 {
     margin-top: 1rem;
     margin: 1px;
     padding: 1px;
     height: 800px!;
     max-width: 550px;
+}
+/* Styling for paragraphs on home page */
+.p.index {
+    background-color: pink!important;
 }
   
 /*Styling for Login and Register pages*/
