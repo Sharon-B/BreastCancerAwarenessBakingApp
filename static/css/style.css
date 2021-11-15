@@ -341,3 +341,59 @@ form p {
 .recipe-image-wrapper {
     text-align: center
 }
+
+/* MEDIA QUERIES */
+
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    #welcome {
+        display: flex;
+        font-size: xx-large!important;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2rem;
+    }
+
+
+    .aware-img1 {
+    margin-top: -10%;
+    margin-bottom: 4%;
+    padding: 5px;
+    max-width: 50%;
+    padding: 3%!important;
+    /* text-align: center; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    }
+
+    .p-index {
+        padding: 2%;  
+    }
+
+    .recipes-content .recipes .recipe-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .input-field {
+        padding: .5rem;
+        margin: .5rem 0;
+        font-size: 1rem;
+        width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
