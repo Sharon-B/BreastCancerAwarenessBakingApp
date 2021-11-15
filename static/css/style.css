@@ -118,16 +118,17 @@ footer {
 
 /* Styling for desciptive image on home page */
 .aware-img1 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 0px;
     max-width: 100%;
     padding: 0!important;
 }
-.aware-img1-space {
+
+/* .aware-img1-space {
     margin: 0px;
     padding: 0px;
     max-width: 100%;
-}
+} */
 /* Styling for introduction paragraph on home page */
 .intro {
     text-align: center; 
