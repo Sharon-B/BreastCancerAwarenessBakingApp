@@ -320,7 +320,9 @@ form p {
     background-color: #eef0fa;
 }
 .recipe-list-item {
-    font-size: 1.6rem;
     white-space: pre-wrap;
     list-style: none;
+}
+.recipe-image-wrapper {
+    text-align: center
 }
