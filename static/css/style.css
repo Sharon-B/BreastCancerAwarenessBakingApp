@@ -118,16 +118,12 @@ footer {
 
 /* Styling for desciptive image on home page */
 .aware-img1 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding: 0px;
     max-width: 100%;
     padding: 0!important;
 }
-.aware-img1-space {
-    margin: 0px;
-    padding: 0px;
-    max-width: 100%;
-}
+
 /* Styling for introduction paragraph on home page */
 .intro {
     text-align: center; 
@@ -253,12 +249,11 @@ form p {
     border-width: 2px;
     border-style: solid;
     border-color: #eef0fa;
-    margin: 30px;
     padding: 20px;
 }
 .awareness-content .awareness-header-list {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0.5;
 }
 .awareness-content a {
     color:#402342;
@@ -270,10 +265,18 @@ form p {
     padding: 10px;
     margin: 20px 0;
     background-color: #eef0fa;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
 }
+
 .awareness-content h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+.awareness-content p {
+    text-indent: 20px;
 }
 .awareness-title {
     font-size: 2.5rem;
@@ -289,6 +292,18 @@ form p {
     font-size: 0.9rem;
     font-style: italic;
     color: grey;
+}
+
+.signSymptomsList {
+    list-style-type: none!important;
+    letter-spacing: 0.5px;
+    padding: 0.5%;
+}
+
+.awarenessNotices {
+    font-style: italic!important;
+    font-weight: bold;
+
 }
 .recipes-content {
     border-width: 2px;
